@@ -50,7 +50,7 @@ public:
 	void trigger() override;
 
 private:
-    bool on = false;
+	bool on;
 };
 
 #endif

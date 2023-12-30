@@ -46,7 +46,7 @@ public:
 
 protected:
     /** Undo (true) or redo (false) */
-    bool const undo = false;
+	bool const undo;
 };
 
 #endif

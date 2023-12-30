@@ -43,6 +43,8 @@ public:
 
 	void init(int status=0) override;
 	void trigger() override;
+
+private:
 };
 
 #endif

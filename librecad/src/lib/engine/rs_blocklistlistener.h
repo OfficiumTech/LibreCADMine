@@ -36,7 +36,8 @@
  */
 class RS_BlockListListener {
 public:
-    virtual ~RS_BlockListListener() = default;
+    RS_BlockListListener() {}
+    virtual ~RS_BlockListListener() {}
 
     /**
      * Called when the active block changes.

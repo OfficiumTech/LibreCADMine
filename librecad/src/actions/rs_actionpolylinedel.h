@@ -60,7 +60,7 @@ public:
 	void updateMouseCursor() override;
 
 private:
-    RS_Entity* delEntity = nullptr;
+    RS_Entity* delEntity;
 	std::unique_ptr<RS_Vector> delPoint;
 };
 

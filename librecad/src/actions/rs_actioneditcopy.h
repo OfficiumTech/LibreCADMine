@@ -64,7 +64,7 @@ public:
 
 protected:
     /** Copy (true) or cut (false) */
-    bool copy = false;
+    bool copy;
 
 	std::unique_ptr<RS_Vector> referencePoint;
 };

@@ -49,9 +49,9 @@ public:
 	void updateMouseButtonHints() override;
 
 private:
-    RS_Polyline* polyline = nullptr;
-    RS_Entity* e1 = nullptr;
-    RS_Entity* e2 = nullptr;
+    RS_Polyline* polyline;
+    RS_Entity* e1;
+	RS_Entity* e2;
 	struct Points;
 	std::unique_ptr<Points> pPoints;
 };

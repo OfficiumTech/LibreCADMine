@@ -44,13 +44,13 @@ struct RS_EllipseData {
     //! Endpoint of major axis relative to center.
     RS_Vector majorP;
     //! Ratio of minor axis to major axis.
-    double ratio = 0.;
+	double ratio;
     //! Start angle
-    double angle1 = 0.;
+	double angle1;
     //! End angle
-    double angle2 = 0.;
+	double angle2;
     //! Reversed (cw) flag
-    bool reversed = false;
+	bool reversed;
 };
 
 std::ostream& operator << (std::ostream& os, const RS_EllipseData& ed);

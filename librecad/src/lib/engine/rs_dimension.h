@@ -77,7 +77,7 @@ struct RS_DimensionData : public RS_Flags {
     /** Line spacing style */
     RS_MTextData::MTextLineSpacingStyle lineSpacingStyle;
     /** Line spacing factor */
-    double lineSpacingFactor = 0.;
+    double lineSpacingFactor;
     /**
     * Text string entered explicitly by user or null
     * or "<>" for the actual measurement or " " (one blank space)
@@ -87,7 +87,7 @@ struct RS_DimensionData : public RS_Flags {
     /** Dimension style name */
     QString style;
     /** Rotation angle of dimension text away from default orientation */
-    double angle = 0.;
+    double angle;
 };
 
 std::ostream& operator << (std::ostream& os,

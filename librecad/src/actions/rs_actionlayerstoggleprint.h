@@ -46,7 +46,7 @@ public:
 	void trigger() override;
 
 protected:
-    RS_Layer* a_layer = nullptr;
+    RS_Layer* a_layer;
 
 private:
     void deselectEntities(RS_Layer* layer);

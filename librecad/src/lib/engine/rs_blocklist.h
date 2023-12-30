@@ -102,15 +102,15 @@ public:
 
 private:
     //! Is the list owning the blocks?
-    bool owner = false;
+    bool owner;
     //! Blocks in the graphic
     QList<RS_Block*> blocks;
     //! List of registered BlockListListeners
     QList<RS_BlockListListener*> blockListListeners;
     //! Currently active block
-    RS_Block* activeBlock = nullptr;
+    RS_Block* activeBlock;
     /** Flag set if the block list was modified and not yet saved. */
-    bool modified = false;
+    bool modified;
 };
 
 #endif

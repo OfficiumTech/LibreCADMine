@@ -75,9 +75,9 @@ private:
 	struct Points;
 	std::unique_ptr<Points> pPoints;
 	/** Number of edges. */
-    int number = 0;
+	int number;
 	/** Last status before entering text. */
-    Status lastStatus = SetCorner1;
+	Status lastStatus;
 };
 
 #endif

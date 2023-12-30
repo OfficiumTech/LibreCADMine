@@ -52,7 +52,7 @@ struct RS_DimDiametricData {
     /** Definition point. */
     RS_Vector definitionPoint;
     /** Leader length. */
-    double leader = false;
+    double leader;
 };
 
 std::ostream& operator << (std::ostream& os, const RS_DimDiametricData& dd);

@@ -82,10 +82,10 @@ public:
 	}
 
 private:
-    RS_Entity* trimEntity = nullptr;
+    RS_Entity* trimEntity;
 	std::unique_ptr<RS_Vector> trimCoord;
-    double distance = 0.;
-    bool byTotal = false;
+	double distance;
+    bool byTotal;
         /**
          * Commands
          */

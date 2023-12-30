@@ -56,9 +56,9 @@ struct RS_DimLinearData {
     /** Definition point. Startpoint of the second definition line. */
     RS_Vector extensionPoint2;
     /** Rotation angle in rad. */
-    double angle = 0.;
+    double angle;
     /** Oblique angle in rad. */
-    double oblique = 0.;
+    double oblique;
 };
 
 std::ostream& operator << (std::ostream& os,

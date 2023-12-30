@@ -43,24 +43,25 @@ struct LC_HyperbolaData {
 					 const RS_Vector& majorP,
 					 double ratio,
 					 double angle1, double angle2,
-                     bool reversed);
+					 bool reversed);
+	~LC_HyperbolaData() = default;
 	/** create data based on foci and a point on hyperbola */
 	LC_HyperbolaData(const RS_Vector& focus0,
 					 const RS_Vector& focus1,
 					 const RS_Vector& point);
 
 	//! Hyperbola center
-    RS_Vector center{};
+	RS_Vector center;
 	//! Endpoint of major axis relative to center.
-    RS_Vector majorP{};
+	RS_Vector majorP;
 	//! Ratio of minor axis to major axis.
-    double ratio = 0.;
+	double ratio;
 	//! Start angle
-    double angle1 = 0.;
+	double angle1;
 	//! End angle
-    double angle2 = 0.;
+	double angle2;
 	//! Reversed (cw) flag
-    bool reversed = false;
+	bool reversed;
 };
 
 std::ostream& operator << (std::ostream& os, const LC_HyperbolaData& ed);
@@ -251,7 +252,7 @@ public:
 
 protected:
     LC_HyperbolaData data;
-    bool m_bValid = false;
+    bool m_bValid;
 
 };
 
